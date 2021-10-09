@@ -22,15 +22,15 @@ public class BranchLocatorPage extends Reusable_Annotations_Class_Html_Report {
     @FindBy(xpath = "//*[@class='location-info']")
     private WebElement Location;
 
-    public void fillAddressField()
+    public void FillAddressField()
     {
         ReusableMethods_With_Logger.sendKeys(driver,AddressField,"33614","input zipcode in text field",logger);
     }
-    public void hitEnterOnAddressField()
+    public void HitEnterOnAddressField()
     {
         ReusableMethods_With_Logger.sendKeys(driver,AddressField,Keys.ENTER,"hit enter on address input field",logger);
     }
-    public void getFirstResultFromBranchSearch()
+    public void GetFirstResultFromBranchSearch()
     {
         logger.log(LogStatus.PASS, "Got address of nearest Branch: " + Location.getText());
     }

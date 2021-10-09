@@ -20,6 +20,9 @@ public class BusinessPage extends Reusable_Annotations_Class_Html_Report {
     @FindBy(xpath = "//a[@href='/resources/calculators/loan-payment-calculator']")
     private WebElement LoanPaymentCalculatorLink;
 
+    @FindBy(xpath = "//*[(@href='/business/bank') and (@class='btn btn-block btn-go')]")
+    private WebElement BusinessBankingLink;
+
 
     public void ScrollDown()
     {
@@ -27,7 +30,11 @@ public class BusinessPage extends Reusable_Annotations_Class_Html_Report {
     }
     public void ClickOnLoanPaymentCalculatorLink()
     {
-        ReusableMethods_With_Logger.click(driver,LoanPaymentCalculatorLink,"clicking on loan payment calculator link", logger);
+        ReusableMethods_With_Logger.click(driver,LoanPaymentCalculatorLink,"click on loan payment calculator link", logger);
+    }
+    public void ClickOnBusinessBankingLink()
+    {
+        ReusableMethods_With_Logger.click(driver,BusinessBankingLink,"click on business banking link", logger);
     }
 
 

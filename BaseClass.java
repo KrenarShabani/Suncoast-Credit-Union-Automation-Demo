@@ -39,6 +39,16 @@ public class BaseClass extends Reusable_Annotations_Class_Html_Report {
         LoanResultsPage loanResultsPage = new LoanResultsPage(driver);
         return loanResultsPage;
     }
+    public static BusinessBankingPage businessBankingPage()
+    {
+        BusinessBankingPage businessBankingPage = new BusinessBankingPage(driver);
+        return businessBankingPage;
+    }
+    public static BusinessBankingCheckingAccountPage businessBankingCheckingAccountPage()
+    {
+        BusinessBankingCheckingAccountPage businessBankingCheckingAccountPage = new BusinessBankingCheckingAccountPage(driver);
+        return businessBankingCheckingAccountPage;
+    }
 
 
 }
