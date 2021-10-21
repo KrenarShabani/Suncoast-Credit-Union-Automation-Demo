@@ -21,9 +21,12 @@ public class HomePage extends Reusable_Annotations_Class_Html_Report {
     private WebElement branchLocatorLink;
     @FindBy(xpath = "//*[text()='Business']")
     private WebElement BusinessPageTab;
+    @FindBy(xpath = "//*[@id=\"Form1\"]/header/div/div[3]/nav[1]/ul/li[2]/a")
+    private WebElement joinLink;
 
     public void HoverBranchLocatorLink()
     {
+        Actions action = new Actions(driver);
         ReusableMethods_With_Logger.mouseHover(driver,branchLocatorLink,"hovering over branch locator link",logger);
     }
     public void ClickOnBranchLocatorLink() throws InterruptedException 
@@ -34,6 +37,10 @@ public class HomePage extends Reusable_Annotations_Class_Html_Report {
     public void ClickOnBusinessTab()
     {
         ReusableMethods_With_Logger.click(driver,BusinessPageTab,"Clicking on Business Tab",logger);
+    }
+    public void ClickOnJoinLink()
+    {
+        ReusableMethods_With_Logger.click(driver,joinLink,"click on join link",logger);
     }
 
 }

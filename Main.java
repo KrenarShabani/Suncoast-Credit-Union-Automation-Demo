@@ -1,10 +1,12 @@
 package SuncoastCreditUnion;
 
 import extent.Reusable_Annotations_Class_Html_Report;
-import org.kohsuke.rngom.parse.host.Base;
+import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
-public class Driver extends Reusable_Annotations_Class_Html_Report {
+import java.util.List;
+
+public class Main extends Reusable_Annotations_Class_Html_Report {
 
     @Test
     public void LoanPaymentCalculatorTest() throws InterruptedException
@@ -48,6 +50,8 @@ public class Driver extends Reusable_Annotations_Class_Html_Report {
 
     @Test
     public static void CheckingAccountInfoTest() throws InterruptedException {
+        
+
         BaseClass.basePage();
         Thread.sleep(2000);
         BaseClass.homePage().ClickOnBusinessTab();
@@ -61,18 +65,27 @@ public class Driver extends Reusable_Annotations_Class_Html_Report {
         BaseClass.businessBankingCheckingAccountPage().ClickOnTypeOfCheckingSelector();
         Thread.sleep(500);
         BaseClass.businessBankingCheckingAccountPage().SelectCheckingAccountType(2);
-        BaseClass.businessBankingCheckingAccountPage().GetCheckAccountTypeInfo();
+        BaseClass.businessBankingCheckingAccountPage().GetCheckingAccountTypeInfo();
         Thread.sleep(1000);
         BaseClass.businessBankingCheckingAccountPage().ClickOnTypeOfCheckingSelector();
         Thread.sleep(500);
         BaseClass.businessBankingCheckingAccountPage().SelectCheckingAccountType(1);
-        BaseClass.businessBankingCheckingAccountPage().GetCheckAccountTypeInfo();
+        BaseClass.businessBankingCheckingAccountPage().GetCheckingAccountTypeInfo();
         Thread.sleep(1000);
         BaseClass.businessBankingCheckingAccountPage().ClickOnTypeOfCheckingSelector();
         Thread.sleep(500);
         BaseClass.businessBankingCheckingAccountPage().SelectCheckingAccountType(0);
-        BaseClass.businessBankingCheckingAccountPage().GetCheckAccountTypeInfo();
+        BaseClass.businessBankingCheckingAccountPage().GetCheckingAccountTypeInfo();
         Thread.sleep(2000);
+    }
+    @Test
+    public static void signup() throws InterruptedException {
+        BaseClass.basePage();
+        Thread.sleep(2000);
+        BaseClass.homePage().ClickOnJoinLink();
+        Thread.sleep(3000);
+
+
     }
 
 }
