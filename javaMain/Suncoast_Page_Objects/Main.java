@@ -1,10 +1,7 @@
-package SuncoastCreditUnion;
+package SuncoastCreditUnion.javaMain.Suncoast_Page_Objects;
 
-import extent.Reusable_Annotations_Class_Html_Report;
-import org.openqa.selenium.By;
+import SuncoastCreditUnion.javaMain.Reusable_Annotations_Class_Html_Report;
 import org.testng.annotations.Test;
-
-import java.util.List;
 
 public class Main extends Reusable_Annotations_Class_Html_Report {
 
@@ -50,7 +47,7 @@ public class Main extends Reusable_Annotations_Class_Html_Report {
 
     @Test
     public static void CheckingAccountInfoTest() throws InterruptedException {
-        
+
 
         BaseClass.basePage();
         Thread.sleep(2000);

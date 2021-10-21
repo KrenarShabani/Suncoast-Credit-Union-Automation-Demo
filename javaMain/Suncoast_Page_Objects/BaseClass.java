@@ -1,5 +1,5 @@
-package SuncoastCreditUnion;
-import extent.Reusable_Annotations_Class_Html_Report;
+package SuncoastCreditUnion.javaMain.Suncoast_Page_Objects;
+import SuncoastCreditUnion.javaMain.Reusable_Annotations_Class_Html_Report;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 

@@ -1,9 +1,9 @@
-package SuncoastCreditUnion;
+package SuncoastCreditUnion.javaMain.Suncoast_Page_Objects;
 
-import Day_7.ReusableMethods_With_Logger;
+import SuncoastCreditUnion.javaMain.ReusableMethods_With_Logger;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
-import extent.Reusable_Annotations_Class_Html_Report;
+import SuncoastCreditUnion.javaMain.Reusable_Annotations_Class_Html_Report;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
